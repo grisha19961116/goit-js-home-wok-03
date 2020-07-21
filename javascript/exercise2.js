@@ -1,28 +1,14 @@
-// // Завдання 2
-// // Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію
-//  calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини)
-//   і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
-
-const calculateEngravingPrice = function (message, pricePerWord) {
-    const result = message.split(' ').length*pricePerWord;
-    return `Our result after calculate is ${result}`;
+// Завдання 2
+// Напиши функцію countProps(obj), яка рахує кількість властивостей в об'єкті. Функція повертає число - кількість властивостей.
+function countProps (object) {
+  let total = 0 ;
+for(const i in object){
+  if(typeof object[i] !== undefined ) total += 1;
+    }
+   return total;
 };
-const message = 'Welcome to Bahamas!';
-console.log(
-  calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
-    10,
-  ),
-); 
-console.log(
-  calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
-    20,
-  ),
-);
-console.log(
-  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
-); 
-console.log(
-  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
-); 
+console.log(countProps({})); // 0
+
+console.log(countProps({ name: 'Mango', age: 2 })); // 2
+
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
