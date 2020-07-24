@@ -18,10 +18,9 @@ user.hobby = 'skydiving';
 user.premium = 'false';
 console.log(user);
 // after changes
-let key = 0;
 const keys = Object.keys(user);
 for(const keyValue of keys){
-    key = keyValue;
- console.log(`${key} : ${user[keyValue]}`);
+ console.log(`${keyValue} : ${user[keyValue]}`);
 }
 // show key and him value
+
