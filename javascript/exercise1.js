@@ -1,26 +1,24 @@
-// Завдання 1
-// Напиши скрипт, який, для об'єкта user, послідовно:
-
-// додає поле mood зі значенням 'happy'
-// замінює значення hobby на 'skydiving'
-// замінює значення premium на false
-// виводить вміст об'єкта user в форматі ключ:значення використовуючи Object.keys() і for...of
+// Exercise 1
+// Write script which for array user flow:
+// adding field mood with value 'happy'
+// patch value hobby on 'skydiving'
+// patch value premium на 'false'
+// Show  contents user array in format like 'key : value'  by using  Object.keys() and for...of
 const user = {
-  name: 'Mango',
+  name: "Mango",
   age: 20,
-  hobby: 'html',
+  hobby: "html",
   premium: true,
 };
 console.log(user);
 // before changes
-user.mood = 'happy';
-user.hobby = 'skydiving';
-user.premium = 'false';
+user.mood = "happy";
+user.hobby = "skydiving";
+user.premium = "false";
 console.log(user);
 // after changes
 const keys = Object.keys(user);
-for(const keyValue of keys){
- console.log(`${keyValue} : ${user[keyValue]}`);
+for (const keyValue of keys) {
+  console.log(`${keyValue} : ${user[keyValue]}`);
 }
-// show key and him value
-
+// shows key and him value
